@@ -1,12 +1,12 @@
 @font-face {
   font-family: neonfont;
-  src: url(../Portfolio/assets/neon_3/Neon.ttf);
+  src: url(../main/assets/neon_3/Neon.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: neonix;
-  src: url(../Portfolio/assets/neonix/Neonix.ttf);
+  src: url(../main/assets/neonix/Neonix.ttf);
 }
 
 #background-video {
