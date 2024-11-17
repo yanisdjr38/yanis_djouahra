@@ -1,0 +1,114 @@
+@font-face {
+  font-family: neonfont;
+  src: url(../Portfolio/assets/neon_3/Neon.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: neonix;
+  src: url(../Portfolio/assets/neonix/Neonix.ttf);
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  object-fit: fill; /* Ajuste la vidéo pour couvrir tout l’écran */
+  z-index: -1; /* Place la vidéo en arrière-plan */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  z-index: 1; /* Assure que le texte est au-dessus de la vidéo */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: neonix;
+  color: #ffffff;
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #00f7ff,
+    0 0 45px #00f7ff, 0 0 55px #00f7ff, 0 0 70px #00f7ff, 0 0 80px #00f7ff;
+}
+
+.mySlides:hover {
+  opacity: 0.7;
+}
+
+#container {
+  border: solid 10vw;
+  border-color: #247477;
+  border-radius: 2vw;
+}
+
+.sc_class,
+.msg_class {
+  background-color: #2e4770;
+  border: solid 1px;
+  border-color: #00f7ff;
+}
+
+#body {
+  background: rgb(8, 12, 5);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 5, 1) 0%,
+    rgba(12, 30, 35, 1) 88%
+  );
+  background-attachment: scroll;
+  background-position: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 16px 16px;
+  width: 272px;
+
+  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  border-color: #000000;
+}
+.card-body {
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.card-title {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+.card-text {
+  line-height: 1.4;
+  margin: 10px 0px 0px 0px;
+  font-size: 17px;
+  color: #000000;
+}
+
+#xp {
+  color: #e7feff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+div.bordure {
+  border-bottom: 1px solid white;
+}
