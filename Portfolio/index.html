@@ -44,7 +44,7 @@
     </header>
 
 <body id="body">
-  <h2 class="font-sans font-medium text-[#e7feff] text-7xl mx-4 my-16 " id="parcour">Parcour</h2>   
+  <h2 class="font-sans font-medium text-[#e7feff] text-7xl mx-4 my-16 " id="parcour">Parcours</h2>   
   <section class="flex flex-col-5 justify-center space-x-11 space-y-5 flex-wrap">
     <div class="card">
       <img src="../Portfolio/assets/loco_ecole/epitech_lyon.jpg" alt="preview img"/>
@@ -80,7 +80,7 @@
   <p class="font-sans font-medium text-[#e7feff] my-2">Assistant Manager (Alternance) <br> New Balance - 2022-2024 <br> Management d'équipe - Gestion du magasin/stock</p>
   <div class="bordure my-4"></div>
   <img src="../Portfolio/assets/loco_ecole/logo/6.png" alt="" class="max-h-20 max-w-20 rounded-md my-2">
-  <p class="font-sans font-medium text-[#e7feff] my-2">Commerciale/Community Manger (Stage) <br> Avenir Basket Dauphiné (club) - 2020-2022 <br> Prospection et Gestion des réseaux sociaux</p>
+  <p class="font-sans font-medium text-[#e7feff] my-2">Commerciale/Community Manager (Stage) <br> Avenir Basket Dauphiné (club) - 2021-2023 <br> Prospection et Gestion des réseaux sociaux</p>
 </div>
 
   </section>
@@ -147,7 +147,7 @@
       </div> 
   
       <!-- Contact Me -->
-      <form action="#" class=" msg_class rounded-lg w-full md:w-1/2 border border-teal-500 p-6">
+      <form action="https://getform.io/f/amddypdb" method="POST" enctype="multipart/form-data" class=" msg_class rounded-lg w-full md:w-1/2 border border-teal-500 p-6" id="monFormulaire">
       <h3 class="text-teal-100 text-2xl font-semibold mb-5">
           Envoyez moi un message
       </h3>
@@ -155,7 +155,7 @@
           <div class="flex flex-col mb-3">
           <label for="name" class="text-teal-100">Nom</label>
           <input 
-              type="text" id="name" 
+              type="text" name="name" 
               class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-teal-500 focus:outline-none focus:bg-gray-800 focus:text-teal-500"
               autocomplete="off"
           >
@@ -163,17 +163,17 @@
           <div class="flex flex-col mb-3">
           <label for="email"  class="text-teal-100">Email</label>
           <input 
-              type="text" id="email" 
+              type="text" name="email" 
               class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-teal-500 focus:outline-none focus:bg-gray-800 focus:text-teal-500"
               autocomplete="off"
           >
           </div>
           <div class="flex flex-col mb-3">
           <label for="message" class="text-teal-100">Message</label>
-          <textarea 
-              rows="4" id="message" 
+          <input type="text"
+              rows="4" name="message" 
               class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-teal-500 focus:outline-none focus:bg-gray-800 focus:text-teal-500"
-          ></textarea>
+          ></input>
           </div>
       </div>
       <div class="w-full pt-3">
