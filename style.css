@@ -118,10 +118,10 @@ div.bordure {
 
 @media (max-width: 1024px) {
   #main-section {
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-top: 11rem;
-    margin-bottom: 11rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
   }
 
   #main-title {
