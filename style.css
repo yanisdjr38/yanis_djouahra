@@ -55,7 +55,7 @@ h2 {
 
 .sc_class,
 .msg_class {
-  background-color: #2e4770;
+  background-color: #fff;
   border: solid 1px;
   border-color: #00f7ff;
 }
@@ -76,10 +76,8 @@ h2 {
   flex-direction: column;
   border-radius: 16px 16px 16px 16px;
   width: 272px;
-
   box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-
   border-color: #000000;
 }
 .card-body {
@@ -103,6 +101,11 @@ h2 {
   color: #000000;
 }
 
+.card-image {
+  min-width: 300px;
+  min-height: 200px;
+}
+
 #xp {
   color: #e7feff;
   font-family: Arial, Helvetica, sans-serif;
@@ -111,4 +114,23 @@ h2 {
 
 div.bordure {
   border-bottom: 1px solid white;
+}
+
+@media (max-width: 1024px) {
+  #main-section {
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+  }
+
+  #main-title {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+  }
+
+  #main-subtitle {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
 }
