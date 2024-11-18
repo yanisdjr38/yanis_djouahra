@@ -1,12 +1,12 @@
 @font-face {
   font-family: neonfont;
-  src: url(../newPorfolio/assets/neon_3/Neon.ttf);
+  src: url(../newPortfolio/assets/neon_3/Neon.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: neonix;
-  src: url(../newPorfolio/assets/neonix/Neonix.ttf);
+  src: url(../newPortfolio/assets/neonix/Neonix.ttf);
 }
 
 #background-video {
@@ -118,8 +118,8 @@ div.bordure {
 
 @media (max-width: 1024px) {
   #main-section {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     margin-top: 11rem;
     margin-bottom: 11rem;
   }
