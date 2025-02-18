@@ -1,12 +1,12 @@
 @font-face {
   font-family: neonfont;
-  src: url(./assets/neon_3/Neon.ttf);
+  src: url(yanis_djouahra/assets/neon_3/Neon.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: neonix;
-  src: url(./assets/neonix/Neonix.ttf);
+  src: url(yanis_djouahra/assets/neonix/Neonix.ttf);
 }
 
 #background-video {
