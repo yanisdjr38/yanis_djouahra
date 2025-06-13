@@ -337,6 +337,7 @@ body {
   font-size: 1.2rem;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .project-card:hover .project-overlay {
