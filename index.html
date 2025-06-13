@@ -3,344 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Yanis Djouahra – Développeur Web Junior</title>
+    <meta
+      name="description"
+      content="Portfolio de Yanis Djouahra, développeur web junior basé à Lyon. Projets, compétences, parcours et contact."
+    />
+    <meta
+      property="og:title"
+      content="Yanis Djouahra – Développeur Web Junior"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez mes projets en développement web, scraping, automatisation et plus."
+    />
+    <meta property="og:image" content="assets/image/capture_projet.png" />
+    <meta
+      property="og:url"
+      content="https://yanisdjr38.github.io/yanis_djouahra/"
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Djouahra Yanis</title>
-    <style>
-      .mySlides {
-        display: none;
-      }
-
-      .w3-left,
-      .w3-right,
-      .w3-badge {
-        cursor: pointer;
-      }
-
-      .w3-badge {
-        height: 13px;
-        width: 13px;
-        padding: 0;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-  <body id="body">
+  <body>
     <header>
-      <nav
-        class="py-2 px-2 flex flex-row flex-wrap justify-center space-x-28 text-2xl"
-      >
-        <a
-          href="#"
-          class="font-sans font-medium text-[#e7feff] hover:underline decoration-teal-300"
-          >Accueil</a
-        >
-        <a
-          href="#parcour"
-          class="font-sans font-medium text-[#e7feff] hover:underline decoration-teal-300"
-          >Parcours</a
-        >
-        <a
-          href="#projet"
-          class="font-sans font-medium text-[#e7feff] hover:underline decoration-teal-300"
-          >Projets</a
-        >
-        <a
-          href="#contact"
-          class="font-sans font-medium text-[#e7feff] hover:underline decoration-teal-300"
-          >Contact</a
-        >
+      <nav class="main-nav">
+        <a href="#">Accueil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <section id="newPortfolio">
+      <section id="newPortfolio" class="video-hero">
         <video id="background-video" autoplay loop muted>
           <source
             src="./assets/cyberpunk-2077-judys-apartment-moewalls-com.mp4"
             type="video/mp4"
           />
         </video>
-      </section>
-
-      <section
-        class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-20 my-56"
-        id="main-section"
-      >
-        <div>
-          <h1 class="text-9xl" id="main-title">
-            DJOUAHRA <br />
-            YANIS
-          </h1>
-          <p
-            class="text-3xl font-sans font-medium text-[#e7feff]"
-            id="main-subtitle"
-          >
-            Web developer junior<br />Étudiant à Openclassroom
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">DJOUAHRA YANIS</h1>
+          <p class="hero-subtitle">
+            Développeur Web Junior – Étudiant OpenClassrooms
           </p>
-          <div class="flex flex-row space-x-11 mt-5">
-            <a href="https://github.com/yanisdjr38">
-              <img
-                src="./assets/icon/github.png"
-                alt="github"
-                class="max-h-8 max-w-8 hover:bg-white rounded-md"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/yanis-djouahra/">
-              <img
-                src="./assets/icon/social.png"
-                alt="linkedin"
-                class="max-h-8 max-w-8 hover:bg-white rounded-md"
-              />
-            </a>
-            <a href="./assets/PDF/djouahra_yanis(ATS).pdf">
-              <img
-                src="./assets/icon/profile.png"
-                alt="mon CV"
-                class="max-h-8 max-w-8 hover:bg-white rounded-md"
-              />
-            </a>
+          <div class="social-icons">
+            <a href="https://github.com/yanisdjr38" aria-label="GitHub"
+              ><img src="./assets/icon/github.png" alt="GitHub"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/yanis-djouahra/"
+              aria-label="LinkedIn"
+              ><img src="./assets/icon/social.png" alt="LinkedIn"
+            /></a>
+            <a href="./assets/PDF/djouahra_yanis(ATS).pdf" aria-label="CV"
+              ><img src="./assets/icon/profile.png" alt="Télécharger CV"
+            /></a>
           </div>
         </div>
       </section>
     </header>
 
-    <h2
-      class="font-sans font-medium text-[#e7feff] text-7xl mx-28 mt-80 mb-20"
-      id="parcour"
-    >
-      Parcours
-    </h2>
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
-      <div class="card">
-        <img
-          src="./assets/loco_ecole/openclassroom.jpg"
-          alt="OpenClassroom"
-          class="card-image"
-        />
-        <div class="card-body">
-          <p class="card-title">Concepteur d'application - Distanciel</p>
-          <ul class="card-text">
-            <li>• Javascript</li>
-            <li>• React</li>
-            <li>• Web HTML/CSS</li>
-            <li>• Développement de réseaux professionnel</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./assets/loco_ecole/epitech_lyon.jpg"
-          alt="Epitech Lyon"
-          class="card-image"
-        />
-        <div class="card-body">
-          <p class="card-title">Pré-Msc-EPITECH - 5 mois</p>
-          <ul class="card-text">
-            <li>• Transformation Digitale</li>
-            <li>• Cyber-sécurité</li>
-            <li>• IoT</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./assets/loco_ecole/ecma_lyon.jpg"
-          alt="ECEMA Lyon"
-          class="card-image"
-        />
-        <div class="card-body">
-          <p class="card-title">Bachelor 3 - ECEMA</p>
-          <ul class="card-text">
-            <li>• Titre RNCP niv-6</li>
-            <li>
-              • Recherche Développement Commercial France et Internationale
-            </li>
-            <li>• Alternance chez New Balance</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./assets/loco_ecole/ella_bts.jpg"
-          alt="BTS Communication"
-          class="card-image"
-        />
-        <div class="card-body">
-          <p class="card-title">BTS Communication - Vienne</p>
-          <ul class="card-text">
-            <li>• Communication Digitale/Print</li>
-            <li>• Commerce, Veille et Prospection</li>
-            <li>• Stage à L'Avenir Basket Dauphiné</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <img
-          src="./assets/loco_ecole/vinci_vft.jpg"
-          alt="BAC STMG"
-          class="card-image"
-        />
-        <div class="card-body">
-          <p class="card-title">BAC STMG - Villefontaine</p>
-          <ul class="card-text">
-            <li>• Option Mercatique</li>
-            <li>• Économie-Droit-Management</li>
-            <li>• Gestion et Finance</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <main class="main-content">
+      <section id="competences" class="section">
+        <h2 class="section-title">Compétences</h2>
+        <ul class="skills-list">
+          <li>HTML / CSS / Tailwind</li>
+          <li>JavaScript / React</li>
+          <li>Git / GitHub</li>
+          <li>Responsive Design</li>
+          <li>Scraping / Automatisation</li>
+          <li>SEO / Accessibilité</li>
+        </ul>
+      </section>
 
-    <section class="px-10 my-10">
-      <p id="xp" class="text-4xl text-white mb-4">Expériences</p>
-      <div class="mb-8">
-        <img
-          src="./assets/loco_ecole/logo/5.png"
-          alt="New Balance"
-          class="max-h-20 max-w-20 rounded-md mb-2"
-        />
-        <p class="text-[#e7feff]">
-          • Assistant Manager (Alternance) <br />New Balance - 2022-2024<br />Management
-          d'équipe - Gestion du magasin/stock
-        </p>
-      </div>
-      <div>
-        <img
-          src="./assets/loco_ecole/logo/6.png"
-          alt="ABD"
-          class="max-h-20 max-w-20 rounded-md mb-2"
-        />
-        <p class="text-[#e7feff]">
-          • Commercial/Community Manager (Stage) <br />Avenir Basket Dauphiné -
-          2021-2023<br />Prospection et Gestion des réseaux sociaux
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2
-        class="font-sans font-medium text-[#e7feff] text-7xl mx-28 my-16"
-        id="projet"
-      >
-        Projets
-      </h2>
-      <div class="w3-content w3-display-container max-w-4xl mx-auto">
-        <a href="https://github.com/yanisdjr38/effetmer.bjj"
-          ><img
-            src="./assets/image/Screenshot from 2025-05-06 16-41-44.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="https://github.com/yanisdjr38/vinted-estimate"
-          ><img
-            src="./assets/image/Screenshot from 2025-05-06 17-02-59.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/rapport_de_compétence.pdf"
-          ><img
-            src="./assets/scrollbar_proets/rapport de compétence.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/DIAPO_BLOC_1.pdf"
-          ><img
-            src="./assets/scrollbar_proets/DIAPO BLOC 1.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/DIAPO_BLOC_2.pdf"
-          ><img
-            src="./assets/scrollbar_proets/DIAPO BLOC 2.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/PROJET_ASSOCIATIF.pdf"
-          ><img
-            src="./assets/scrollbar_proets/PROJET ASSOCIATIF.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/PROJET_DE_COMMUNICATION.pdf"
-          ><img
-            src="./assets/scrollbar_proets/PROJET DE COMMUNICATION.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <a href="./assets/PDF/Dossier_de_veille_Avenir_Basket_Dauphiné.pdf"
-          ><img
-            src="./assets/scrollbar_proets/Copie de RELATION COMMERCIALE.png"
-            class="mySlides rounded-lg"
-        /></a>
-        <div
-          class="w3-center w3-container w3-section w3-display-bottommiddle w3-text-white"
-        >
-          <button
-            class="w3-button w3-black w3-display-left"
-            onclick="plusDivs(-1, 0)"
-          >
-            &#10094;
-          </button>
-          <button
-            class="w3-button w3-black w3-display-right"
-            onclick="plusDivs(1, 0)"
-          >
-            &#10095;
-          </button>
-          <p class="text-black text-l">Cliquez pour voir plus</p>
+      <section id="projets" class="section">
+        <h2 class="section-title">Projets</h2>
+        <div class="project-gallery">
+          <a href="https://github.com/yanisdjr38/effetmer.bjj"
+            ><img
+              src="./assets/image/Screenshot from 2025-05-06 16-41-44.png"
+              alt="Projet BJJ"
+          /></a>
+          <a href="https://github.com/yanisdjr38/vinted-estimate"
+            ><img
+              src="./assets/image/Screenshot from 2025-05-06 17-02-59.png"
+              alt="Projet Vinted Estimate"
+          /></a>
+          <a href="./assets/PDF/rapport_de_compétence.pdf"
+            ><img
+              src="./assets/scrollbar_proets/rapport de compétence.png"
+              alt="Rapport de Compétence"
+          /></a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <h2
-      class="font-sans font-medium text-[#e7feff] text-7xl mx-28 my-10"
-      id="contact"
-    >
-      Contact
-    </h2>
-    <section>
-      <div
-        class="p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center"
-      >
+      <section id="parcours" class="section">
+        <h2 class="section-title">Parcours</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>OpenClassrooms – Concepteur d'application</h3>
+            <p>React, JavaScript, HTML/CSS, Réseaux pro</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Epitech Lyon – Pré-MSc (5 mois)</h3>
+            <p>Transformation digitale, cybersécurité, IoT</p>
+          </div>
+          <div class="timeline-item">
+            <h3>ECEMA – Bachelor 3</h3>
+            <p>Développement commercial, alternance chez New Balance</p>
+          </div>
+          <div class="timeline-item">
+            <h3>BTS Communication – Vienne</h3>
+            <p>Digitale/Print, Commerce, Stage ABD</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
         <form
           action="https://getform.io/f/amddypdb"
           method="POST"
-          enctype="multipart/form-data"
-          class="rounded-lg w-full md:w-1/2 border border-teal-500 p-6 bg-white"
-          id="monFormulaire"
+          class="contact-form"
         >
-          <h3 class="card-title mb-4 text-xl">Envoyez-moi un message</h3>
-          <div class="flex flex-col mb-3">
-            <label for="name" class="card-text">Nom</label>
-            <input
-              type="text"
-              name="name"
-              class="px-3 py-2 bg-gray-800 border border-gray-900 text-teal-200 focus:border-teal-500 focus:outline-none"
-              autocomplete="off"
-            />
-          </div>
-          <div class="flex flex-col mb-3">
-            <label for="email" class="card-text">Email</label>
-            <input
-              type="email"
-              name="email"
-              class="px-3 py-2 bg-gray-800 border border-gray-900 text-teal-200 focus:border-teal-500 focus:outline-none"
-              autocomplete="off"
-            />
-          </div>
-          <div class="flex flex-col mb-3">
-            <label for="message" class="card-text">Message</label>
-            <textarea
-              name="message"
-              rows="4"
-              class="px-3 py-2 bg-gray-800 border border-gray-900 text-teal-200 focus:border-teal-500 focus:outline-none"
-            ></textarea>
-          </div>
-          <div class="w-full pt-3">
-            <button
-              type="submit"
-              class="w-full text-teal-100 bg-gray-900 border border-teal-500 px-4 py-2 font-semibold hover:bg-teal-500 hover:text-white text-xl cursor-pointer"
-            >
-              Envoyer
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" required />
 
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © 2025 Yanis Djouahra – Tous droits réservés
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

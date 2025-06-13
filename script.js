@@ -1,30 +1,27 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+// Carousel amélioré et sécurisé
+let slideIndex = 0;
+let slides;
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
+window.addEventListener("DOMContentLoaded", () => {
+  slides = document.querySelectorAll(".mySlides");
+  if (slides.length > 0) {
+    showSlide(slideIndex);
+    document
+      .querySelector(".w3-display-left")
+      ?.addEventListener("click", () => changeSlide(-1));
+    document
+      .querySelector(".w3-display-right")
+      ?.addEventListener("click", () => changeSlide(1));
+  }
+});
+
+function changeSlide(n) {
+  slideIndex = (slideIndex + n + slides.length) % slides.length;
+  showSlide(slideIndex);
 }
 
-function currentDiv(n) {
-  showDivs((slideIndex = n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " w3-white";
+function showSlide(n) {
+  slides.forEach((slide, index) => {
+    slide.style.display = index === n ? "block" : "none";
+  });
 }
