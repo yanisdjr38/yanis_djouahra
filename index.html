@@ -23,11 +23,14 @@
     />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
   </head>
   <body>
@@ -37,6 +40,7 @@
         <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
         <a href="#parcours">Parcours</a>
+        <a href="experience">Expériences</a>
         <a href="#contact">Contact</a>
       </nav>
       <section id="newPortfolio" class="video-hero">
@@ -54,15 +58,21 @@
           </p>
           <div class="social-icons">
             <a href="https://github.com/yanisdjr38" aria-label="GitHub"
-              ><img src="./assets/icon/github.png" alt="GitHub"
+              ><img src="./assets/icon/github.png" alt="GitHub" loading="lazy"
             /></a>
             <a
               href="https://www.linkedin.com/in/yanis-djouahra/"
               aria-label="LinkedIn"
-              ><img src="./assets/icon/social.png" alt="LinkedIn"
+              ><img
+                src="./assets/icon/social.png"
+                alt="LinkedIn"
+                loading="lazy"
             /></a>
             <a href="./assets/PDF/djouahra_yanis(ATS).pdf" aria-label="CV"
-              ><img src="./assets/icon/profile.png" alt="Télécharger CV"
+              ><img
+                src="./assets/icon/profile.png"
+                alt="Télécharger CV"
+                loading="lazy"
             /></a>
           </div>
         </div>
@@ -70,40 +80,82 @@
     </header>
 
     <main class="main-content">
-      <section id="competences" class="section">
+      <section id="competences" class="section fade-in-section">
         <h2 class="section-title">Compétences</h2>
         <ul class="skills-list">
-          <li>HTML / CSS / Tailwind</li>
-          <li>JavaScript / React</li>
-          <li>Git / GitHub</li>
-          <li>Responsive Design</li>
-          <li>Scraping / Automatisation</li>
-          <li>SEO / Accessibilité</li>
+          <li><i class="devicon-html5-plain colored"></i> HTML</li>
+          <li><i class="devicon-css3-plain colored"></i> CSS</li>
+          <li><i class="devicon-tailwindcss-plain colored"></i> Tailwind</li>
+          <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+          <li><i class="devicon-react-original colored"></i> React</li>
+          <li><i class="devicon-git-plain colored"></i> Git / GitHub</li>
+          <li><i class="devicon-nodejs-plain colored"></i> Automatisation</li>
+          <li>
+            <i class="devicon-google-plain colored"></i> SEO / Accessibilité
+          </li>
         </ul>
       </section>
 
-      <section id="projets" class="section">
+      <section id="projets" class="section fade-in-section">
         <h2 class="section-title">Projets</h2>
+        <div class="project-filters">
+          <button data-tech="all" class="filter-button active">Tous</button>
+          <button data-tech="js" class="filter-button">JavaScript</button>
+          <button data-tech="react" class="filter-button">React</button>
+          <button data-tech="scraping" class="filter-button">Scraping</button>
+          <button data-tech="Python" class="filter-button">Python</button>
+          <button data-tech="IA" class="filter-button">IA</button>
+          <button data-tech="Market/Comm" class="filter-button">
+            Market/Comm
+          </button>
+        </div>
         <div class="project-gallery">
-          <a href="https://github.com/yanisdjr38/effetmer.bjj"
-            ><img
+          <a
+            href="https://github.com/yanisdjr38/effetmer.bjj"
+            class="project-card"
+            data-tech="react js"
+          >
+            <div class="project-overlay">
+              <p>Effetmer</p>
+              <span>🔗</span>
+            </div>
+            <img
               src="./assets/image/Screenshot from 2025-05-06 16-41-44.png"
               alt="Projet BJJ"
+              loading="lazy"
           /></a>
-          <a href="https://github.com/yanisdjr38/vinted-estimate"
-            ><img
+          <a
+            href="https://github.com/yanisdjr38/vinted-estimate"
+            class="project-card"
+            data-tech="IA Python"
+          >
+            <div class="project-overlay">
+              <p>Vinted Estimate</p>
+              <span>🔗</span>
+            </div>
+            <img
               src="./assets/image/Screenshot from 2025-05-06 17-02-59.png"
               alt="Projet Vinted Estimate"
+              loading="lazy"
           /></a>
-          <a href="./assets/PDF/rapport_de_compétence.pdf"
-            ><img
+          <a
+            href="./assets/PDF/rapport_de_compétence.pdf"
+            class="project-card"
+            data-tech="Market/Comm"
+          >
+            <div class="project-overlay">
+              <p>Rapport NB</p>
+              <span>🔗</span>
+            </div>
+            <img
               src="./assets/scrollbar_proets/rapport de compétence.png"
               alt="Rapport de Compétence"
+              loading="lazy"
           /></a>
         </div>
       </section>
 
-      <section id="parcours" class="section">
+      <section id="parcours" class="section fade-in-section">
         <h2 class="section-title">Parcours</h2>
         <div class="timeline">
           <div class="timeline-item">
@@ -124,8 +176,35 @@
           </div>
         </div>
       </section>
-
-      <section id="contact" class="section">
+      <section id="experience" class="section fade-in-section">
+        <h2 class="section-title">Expériences professionnelles</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>LDLC – Monteur PC (Intérim)</h3>
+            <p>
+              Montage de configurations clients, tests matériels, gestion
+              qualité (2025 – Saint-Quentin-Fallavier)
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>
+              New Balance – Assistant développement commercial (alternance)
+            </h3>
+            <p>
+              Gestion de comptes B2B, suivi de performances, support commercial
+              (2022–2023)
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Stage – Agence ABD Communication</h3>
+            <p>
+              Création de supports print & digitaux, community management,
+              communication client (2021)
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section fade-in-section">
         <h2 class="section-title">Contact</h2>
         <form
           action="https://getform.io/f/amddypdb"
@@ -142,8 +221,12 @@
           <textarea name="message" id="message" rows="5" required></textarea>
 
           <button type="submit">Envoyer</button>
+          <p id="form-message" style="display: none; margin-top: 1rem">
+            ✅ Message envoyé !
+          </p>
         </form>
       </section>
+      <button id="topButton" aria-label="Retour en haut">⬆️</button>
     </main>
 
     <footer class="site-footer">
